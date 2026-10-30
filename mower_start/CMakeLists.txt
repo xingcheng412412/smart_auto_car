@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.8)
+project(mower_start)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY launch param DESTINATION share/${PROJECT_NAME})
+if(BUILD_TESTING)
+  set(_PYTEST_SAVED "$ENV{PYTEST_DISABLE_PLUGIN_AUTOLOAD}")
+  set(ENV{PYTEST_DISABLE_PLUGIN_AUTOLOAD} "1")
+  find_package(ament_cmake_pytest REQUIRED)
+  ament_add_pytest_test(test_bringup test/test_bringup.py
+    ENV "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1" "ROS_LOG_DIR=${CMAKE_CURRENT_BINARY_DIR}/test_ros_logs")
+  ament_add_pytest_test(test_one_click test/test_one_click.py
+    ENV "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1")
+  set(ENV{PYTEST_DISABLE_PLUGIN_AUTOLOAD} "${_PYTEST_SAVED}")
+endif()
+ament_package()

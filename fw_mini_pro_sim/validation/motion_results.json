@@ -1,0 +1,37 @@
+{
+  "forward": {
+    "forward_m": 1.1282694003801628,
+    "left_m": 1.2586693576639338e-09,
+    "yaw_rad": 6.8034100794616114e-09,
+    "stopped_speed_mps": 0.0,
+    "stopped_yaw_rps": 0.0
+  },
+  "reverse": {
+    "forward_m": -1.1257319460978275,
+    "left_m": 4.742082405154173e-07,
+    "yaw_rad": 1.9731454978005826e-08,
+    "stopped_speed_mps": 0.0,
+    "stopped_yaw_rps": 0.0
+  },
+  "turn": {
+    "forward_m": 0.7815368591491333,
+    "left_m": 0.36840347763401426,
+    "yaw_rad": 1.0216585783040601,
+    "stopped_speed_mps": 0.0,
+    "stopped_yaw_rps": 0.0
+  },
+  "crab": {
+    "forward_m": -0.014952192116233831,
+    "left_m": 0.8136568593574822,
+    "yaw_rad": -0.006742139203917974,
+    "stopped_speed_mps": 0.0,
+    "stopped_yaw_rps": 0.0
+  },
+  "spin": {
+    "forward_m": -0.00015414476642122945,
+    "left_m": 0.00017337468427134785,
+    "yaw_rad": 0.7107939988070784,
+    "stopped_speed_mps": 0.0,
+    "stopped_yaw_rps": 0.0
+  }
+}

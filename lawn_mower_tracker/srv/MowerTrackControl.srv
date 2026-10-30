@@ -1,0 +1,6 @@
+string track_state
+string map_name
+uint32 line_id
+---
+bool success
+string message

@@ -1,0 +1,19 @@
+lawn_mower_tracker:
+  ros__parameters:
+    avoidance_enabled: true
+    obstacle_cloud_topic: /rslidar_points
+    obstacle_cloud_frame: fairy_optical
+    obstacle_timeout_sec: 0.5
+    avoidance_max_speed: 0.15
+    avoidance_planning_distance: 3.6
+    lidar_optical_height: 0.518976069
+    body_half_length: 0.30
+    body_half_width: 0.19
+    body_min_z: -0.09
+    body_max_z: 0.57
+    obstacle_min_height: -0.04
+    obstacle_max_height: 0.55
+    obstacle_safety_margin: 0.12
+    avoidance_range: 5.0
+    avoidance_resolution: 0.12
+    avoidance_max_expansions: 18000

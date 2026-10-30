@@ -1,0 +1,31 @@
+{
+  "clouds": 215,
+  "filtered": 214,
+  "routes": 363,
+  "enabled": 1704,
+  "completed": true,
+  "yaw": -0.08054998212618111,
+  "frame": "fairy_optical",
+  "status": 6,
+  "last_pose": [
+    4.078661056661526,
+    0.05607605062505376
+  ],
+  "max_deviation": 0.8728127584578391,
+  "min_box_clearance": 0.516180232635359,
+  "validation_date": "2026-10-26",
+  "test_results": {
+    "lawn_mower_tracker": {
+      "reported_tests": 92,
+      "errors": 0,
+      "failures": 0
+    },
+    "fw_mini_pro_sim": {
+      "reported_tests": 39,
+      "errors": 0,
+      "failures": 0
+    }
+  },
+  "position_error_m": 0.13366997652502655,
+  "yaw_error_deg": 4.615174015684395
+}

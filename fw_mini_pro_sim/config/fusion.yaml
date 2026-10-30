@@ -1,0 +1,10 @@
+slam_rtk_fusion:
+  ros__parameters:
+    sensor_timeout: 2.0
+    odom_timeout: 0.5
+    max_delay: 1.0
+    # Conservative observation floors; raise RTK values when increasing simulator noise.
+    rtk_position_std: 0.05
+    rtk_yaw_std: 0.02
+    slam_position_std: 0.10
+    slam_yaw_std: 0.05

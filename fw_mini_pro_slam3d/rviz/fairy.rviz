@@ -1,0 +1,65 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Background Color: 32; 32; 32
+    Fixed Frame: camera_init
+    Frame Rate: 20
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Voxel Map
+      Enabled: true
+      Topic:
+        Value: /slam3d/map
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Depth: 1
+      Size (m): 0.06
+      Style: Points
+      Color Transformer: AxisColor
+      Axis: Z
+      Position Transformer: XYZ
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Current Scan
+      Enabled: true
+      Topic:
+        Value: /slam3d/registered
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        Depth: 2
+      Color Transformer: FlatColor
+      Color: 255; 220; 80
+      Position Transformer: XYZ
+      Style: Points
+      Size (m): 0.04
+    - Class: rviz_default_plugins/Path
+      Name: Trajectory
+      Enabled: true
+      Topic:
+        Value: /slam3d/path
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        Depth: 2
+      Color: 255; 80; 80
+      Line Style: Lines
+      Line Width: 0.03
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: false
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 15
+      Focal Point: {X: 0, Y: 0, Z: 0}
+      Pitch: 0.65
+      Yaw: 0.8
+Window Geometry:
+  Width: 1280
+  Height: 800

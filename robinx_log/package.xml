@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>robinx_log</name>
+  <version>1.0.0</version>
+  <description>
+    RTKGPSLog 实时数据查看服务器，订阅 ROS 2 topic /rtk_log，通过 WebSocket 实时推送到网页。
+  </description>
+
+  <maintainer email="shaohuahe@robinx.com">Shaohua He</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>rtk_gps_driver_cpp</depend>
+  <depend>std_msgs</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

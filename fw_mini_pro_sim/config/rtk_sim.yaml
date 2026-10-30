@@ -1,0 +1,12 @@
+zmzmrtk_simulator:
+  ros__parameters:
+    # Synthetic geographic origin. X=north, Y=west, Z=up, matching the driver.
+    latitude: 0.0
+    longitude: 0.0
+    altitude: 0.0
+    rate: 10.0
+    position_std: 0.02  # independent Gaussian standard deviation in metres
+    yaw_std: 0.005     # radians
+    seed: 1
+    dropout_start: -1.0  # simulation seconds after first truth sample; -1 disables
+    dropout_duration: 0.0

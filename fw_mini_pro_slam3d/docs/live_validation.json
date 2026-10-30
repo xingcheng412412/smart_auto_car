@@ -1,0 +1,71 @@
+{
+  "imu": {
+    "count": 5001,
+    "backward_stamps": 0,
+    "frame": "fairy_imu",
+    "hz": 199.99630926594494
+  },
+  "points": {
+    "count": 213,
+    "backward_stamps": 0,
+    "frame": "rslidar",
+    "points": 60252,
+    "fields": [
+      "x",
+      "y",
+      "z",
+      "intensity",
+      "time",
+      "ring"
+    ],
+    "hz": 8.725867731455327
+  },
+  "odometry": {
+    "count": 211,
+    "backward_stamps": 0,
+    "frame": "camera_init",
+    "finite": true,
+    "hz": 8.783884499469918
+  },
+  "registered": {
+    "count": 211,
+    "backward_stamps": 0,
+    "frame": "camera_init",
+    "points": 948,
+    "fields": [
+      "x",
+      "y",
+      "z",
+      "intensity",
+      "normal_x",
+      "normal_y",
+      "normal_z",
+      "curvature"
+    ],
+    "hz": 8.784378007754276
+  },
+  "map": {
+    "count": 25,
+    "backward_stamps": 0,
+    "frame": "camera_init",
+    "points": 4949,
+    "fields": [
+      "x",
+      "y",
+      "z",
+      "intensity"
+    ],
+    "hz": 0.9999793730504765
+  },
+  "displacement_m": 0.018527100968923443,
+  "last_position": [
+    -0.005590345419982488,
+    -0.01139441837585857,
+    0.013843925380881208
+  ],
+  "save": {
+    "success": true,
+    "message": "Map saved: /home/sun/all_can_client/fw_mini_pro_control_ros2/src/fw_mini_pro_slam3d/maps/validation_smoke.pcd (4949 voxels)"
+  },
+  "passed": true
+}

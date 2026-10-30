@@ -1,0 +1,4 @@
+int64 mark_id
+---
+bool success
+string message

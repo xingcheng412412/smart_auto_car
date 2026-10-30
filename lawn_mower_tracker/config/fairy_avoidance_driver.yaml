@@ -1,0 +1,29 @@
+# Online RSFAIRY, raw untransformed points in the driver's mechanical base frame.
+common:
+  msg_source: 1
+  send_packet_ros: false
+  send_point_cloud_ros: true
+lidar:
+  - driver:
+      lidar_type: RSFAIRY
+      msop_port: 6699
+      difop_port: 7788
+      imu_port: 6688
+      min_distance: 0.2
+      max_distance: 20.0
+      use_lidar_clock: false  # Host time matches tracker ROS time; PTP is not required.
+      ts_first_point: false
+      dense_points: false
+      start_angle: 0
+      end_angle: 360
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      roll: 0.0
+      pitch: 0.0
+      yaw: 0.0
+    ros:
+      ros_frame_id: rslidar
+      ros_send_point_cloud_topic: /rslidar_points
+      ros_send_imu_data_topic: /rslidar_imu_data
+      ros_queue_length: 1

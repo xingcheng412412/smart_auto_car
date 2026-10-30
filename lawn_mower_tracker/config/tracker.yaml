@@ -1,0 +1,36 @@
+lawn_mower_tracker:
+  ros__parameters:
+    path_file: ""
+    path_root: "~/fw_mini_pro_control_ros2/recorded_files"
+    path_filename: "lawn_mower_records.csv"
+    csv_x_column: "pose_x"
+    csv_y_column: "pose_y"
+    csv_z_column: "pose_z"
+    csv_yaw_column: "yaw"
+    z_enabled: true
+    odom_topic: "/gnss_pose"
+    vehicle_cmd_topic: "/vehicle_cmd"
+    path_status_topic: "/path_status"
+    control_service: "/mowerTrackControl"
+    wheelbase: 1.45
+    control_rate_hz: 50.0
+    rtk_timeout_sec: 0.5
+    max_angular_speed: 3.0
+    lookahead_distance: 2.0
+    min_velocity: 0.3
+    max_velocity: 1.2
+    max_steering_angle: 0.942477796
+    slowdown_distance: 2.0
+    stop_distance: 0.2
+    terminal_alignment_distance: 3.0
+    terminal_yaw_tolerance: 0.174532925
+    search_back_points: 5
+    search_forward_points: 30
+    steering_gain: 1.0
+    max_slope_tangent: 0.3
+    direction_switch_distance: 0.5
+    log_enabled: false
+    log_directory: ""
+    initial_search_distance: 10.0
+    initial_search_points: 10
+    max_start_distance: 3.0

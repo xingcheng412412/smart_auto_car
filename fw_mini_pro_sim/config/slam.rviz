@@ -1,0 +1,43 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: map
+    Background Color: 35; 35; 35
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+    - Class: rviz_default_plugins/Map
+      Name: SLAM Map
+      Enabled: true
+      Topic:
+        Value: /map
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+      Alpha: 0.7
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Fairy Point Cloud
+      Enabled: true
+      Topic:
+        Value: /rslidar_points
+        Reliability Policy: Best Effort
+      Size (Pixels): 2
+      Style: Points
+      Color Transformer: AxisColor
+      Axis: Z
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 18
+      Pitch: 1.2
+      Yaw: 0.8
+Window Geometry:
+  Width: 1200
+  Height: 850

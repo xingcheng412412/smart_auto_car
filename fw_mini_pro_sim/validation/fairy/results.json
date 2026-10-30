@@ -1,0 +1,65 @@
+{
+  "clouds": 136,
+  "scans": 143,
+  "maps": 32,
+  "pose": [
+    0.0747663767509759,
+    0.006057958233976009,
+    0.019522120562428625
+  ],
+  "yaw_sum": 6.302707427742014,
+  "tf_edges": [
+    [
+      "base_link",
+      "rslidar"
+    ],
+    [
+      "map",
+      "odom"
+    ],
+    [
+      "odom",
+      "base_link"
+    ],
+    [
+      "rslidar",
+      "fairy_optical"
+    ]
+  ],
+  "static_edges": [
+    [
+      "base_link",
+      "rslidar"
+    ],
+    [
+      "rslidar",
+      "fairy_optical"
+    ]
+  ],
+  "last_map": 111409.810438638,
+  "occupied": 1016,
+  "free": 50621,
+  "map_size": [
+    237,
+    237
+  ],
+  "last_cloud": 111409.792638764,
+  "cloud_frame": "fairy_optical",
+  "cloud_size": [
+    96,
+    1440
+  ],
+  "finite_points": 125271,
+  "last_scan": 111409.79539581,
+  "finite_rays": 1439,
+  "distance_travelled_m": 7.420270477125401,
+  "max_excursion_m": 2.3528682188326804,
+  "cloud_wall_hz": 4.49224157266664,
+  "sim_real_time_ratio": 0.7686724468785138,
+  "return_distance_m": 0.07501139880333833,
+  "dynamic_tf_nodes": [
+    "fw_mini_pro_sim_adapter",
+    "slam_toolbox"
+  ],
+  "map_versions": 30
+}

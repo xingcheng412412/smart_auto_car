@@ -1,0 +1,6 @@
+bool data
+string map_name
+string record_status
+---
+bool success
+string message
